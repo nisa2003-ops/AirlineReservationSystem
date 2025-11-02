@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="392.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airline.AdminDashboardController">
+    <top>
+        <HBox spacing="10" style="-fx-background-color: #2c3e50;">
+            <padding><Insets bottom="10" left="10" right="10" top="10" /></padding>
+            <Label style="-fx-text-fill: white; -fx-font-size: 18px; -fx-font-weight: bold;" text="Administrator Dashboard" />
+        </HBox>
+    </top>
+
+    <left>
+        <VBox prefHeight="318.0" prefWidth="410.0" spacing="15" style="-fx-background-color: #34495e;">
+            <padding><Insets bottom="15" left="15" right="15" top="15" /></padding>
+            <Button onAction="#handleUserManagement" prefHeight="70.0" prefWidth="254.0" style="-fx-background-color: #1abc9c; -fx-text-fill: white;" text="User Management">
+            <font>
+               <Font name="Berlin Sans FB" size="21.0" />
+            </font></Button>
+            <Button onAction="#handleFlightManagement" prefHeight="70.0" prefWidth="254.0" style="-fx-background-color: #3498db; -fx-text-fill: white;" text="Flight Management">
+            <font>
+               <Font name="Berlin Sans FB" size="21.0" />
+            </font></Button>
+            <Button onAction="#handleBookingReports" prefHeight="70.0" prefWidth="254.0" style="-fx-background-color: #9b59b6; -fx-text-fill: white;" text="Booking Reports">
+            <font>
+               <Font name="Berlin Sans FB" size="21.0" />
+            </font></Button>
+            <Button onAction="#handleLogout" prefHeight="50.0" prefWidth="165.0" style="-fx-background-color: #e74c3c; -fx-text-fill: white;" text="Logout">
+            <font>
+               <Font name="Berlin Sans FB" size="18.0" />
+            </font></Button>
+        </VBox>
+    </left>
+
+    <center>
+        <StackPane fx:id="mainContent" prefHeight="346.0" prefWidth="142.0" style="-fx-background-color: #34495e;">
+            <padding><Insets bottom="20" left="20" right="20" top="20" /></padding>
+            </StackPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500" prefWidth="800" style="-fx-background-color: green;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.airline.MyBookingsController">
+    <children>
+        <Label layoutX="20" layoutY="20" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="My Bookings" />
+        
+        <TableView fx:id="bookingsTable" layoutX="20" layoutY="60" prefHeight="400" prefWidth="760" style="-fx-background-color: red;">
+            <columns>
+                <TableColumn fx:id="bookingIdCol" prefWidth="100" text="Booking ID" />
+                <TableColumn fx:id="flightIdCol" prefWidth="100" text="Flight ID" />
+                <TableColumn fx:id="bookingDateCol" prefWidth="150" text="Booking Date" />
+                <TableColumn fx:id="seatClassCol" prefWidth="100" text="Seat Class" />
+                <TableColumn fx:id="seatNumberCol" prefWidth="100" text="Seat Number" />
+                <TableColumn fx:id="statusCol" prefWidth="100" text="Status" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
